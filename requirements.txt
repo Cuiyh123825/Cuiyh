@@ -1,0 +1,18 @@
+torch>=2.0
+torchvision>=0.15
+einops>=0.6
+timm>=0.9
+numpy>=1.22
+tensorboardX>=2.6
+tqdm>=4.65
+
+# Mamba selective-scan kernels (same as KMUNet)
+mamba-ssm>=1.1.2
+causal-conv1d>=1.1.1
+
+# pytorch_wavelets is OPTIONAL — the default wavelet implementation in
+# model/wavelet_embed.py uses a hand-rolled Haar transform via fixed
+# convolutions and requires no extra dependency. Uncomment if you want
+# to switch to db2 / sym2 / coif bases.
+# pytorch_wavelets>=1.3
+# PyWavelets>=1.4
